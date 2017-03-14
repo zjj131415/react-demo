@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px/2 "Microsoft YaHei";
+  color: #666;
+  background-color: #FFF;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #f0893e;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+ul, ol, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+em, i, strong {
+  font-weight: 400;
+  font-style: normal;
+}
+
+input, button, a, textarea {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+input[type='checkbox'] {
+  margin: 0;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+  zoom: 1;
+}
+
