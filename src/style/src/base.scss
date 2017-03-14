@@ -1,0 +1,26 @@
+@mixin __border{
+  content: ' ';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  border-top: 1px solid #e5e5e5;
+  color: #e5e5e5;
+  transform: scaleY(.5);
+  display: block;
+}
+
+.borderT {
+  position: relative;
+  &::before {
+    @include __border;
+    top: 0;
+  }
+}
+.borderB {
+  position: relative !important;
+  &::before,
+  &::after{
+    @include __border;
+    bottom: 0;
+  }
+}

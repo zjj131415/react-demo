@@ -4,7 +4,7 @@ class Item extends React.Component {
     render() {
         let {title, text, timer, img} = this.props;
         return (
-            <div className="item-block">
+            <div className="item-block borderB">
                 <div className="item-photo">
                     <img src={img} alt=""/>
                 </div>
@@ -25,6 +25,12 @@ export class Home extends React.Component {
         super(...args);
         this.state = {
             infor: [
+                {
+                    text: 'hehe',
+                    img: '',
+                    title: 'hahaha',
+                    timer: '2016-4-5'
+                },
                 {
                     text: 'hehe',
                     img: '',

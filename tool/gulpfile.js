@@ -13,7 +13,7 @@ const basePath = '../src';
 gulp.task('scss', function(){
     return gulp.src(path.join(__dirname, basePath, 'style/src/index.scss'))
         .pipe(plumber())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 20 versions']}))
         .pipe(gulp.dest(path.join(__dirname, basePath, 'style/dist')))
         .pipe(notify("Found file: <%= file.relative %>!"))
