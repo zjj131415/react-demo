@@ -9,11 +9,11 @@ class Item extends React.Component {
                     <img src={img} alt=""/>
                 </div>
                 <div className="item-info">
-                    <div className="">
-                        <h3>{title}</h3>
-                        <p>{text}</p>
+                    <div className="item-info-detail">
+                        <h3 className="info-name">{title}</h3>
+                        <p className="info-text">{text}</p>
                     </div>
-                    <div>{timer}</div>
+                    <div className="item-info-tirm">{timer}</div>
                 </div>
             </div>
         )
@@ -26,21 +26,22 @@ export class Home extends React.Component {
         this.state = {
             infor: [
                 {
-                    text: 'hehe',
-                    img: '',
-                    title: 'hahaha',
-                    timer: '2016-4-5'
+                    title: '追风少年',
+                    img: 'https://avatars.githubusercontent.com/u/18258268',
+                    text: '最为一个有情怀的人，总能够写出好文章',
+                    timer: '2015:3:$'
                 },
                 {
-                    text: 'hehe',
-                    img: '',
-                    title: 'hahaha',
+                    title: '陌路',
+                    img: 'https://avatars.githubusercontent.com/u/18258268',
+                    text: '世界那么大，我想去看看',
                     timer: '2016-4-5'
                 }
             ]
         }
     }
     componentWillMount() {
+        console.log('start')
     }
     render() {
         return (

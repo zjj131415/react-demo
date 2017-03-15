@@ -6,21 +6,19 @@
   border-top: 1px solid #e5e5e5;
   color: #e5e5e5;
   transform: scaleY(.5);
-  display: block;
 }
 
-.borderT {
+.borderT,
+.borderB {
   position: relative;
   &::before {
     @include __border;
-    top: 0;
   }
 }
-.borderB {
-  position: relative !important;
-  &::before,
-  &::after{
-    @include __border;
-    bottom: 0;
-  }
+.borderT::before {
+  top: 0;
 }
+.borderB::before {
+  bottom: 0;
+}
+
