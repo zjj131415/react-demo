@@ -1,59 +1,78 @@
-body {
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td, section, article, aside, header, footer, nav, dialog, figure, hgroup {
   margin: 0;
   padding: 0;
-  font: 12px/2 "Microsoft YaHei";
-  color: #666;
-  background-color: #FFF;
 }
 
-a {
-  text-decoration: none;
-  color: #333;
+input, select, textarea {
+  font-size: 100%;
 }
 
-a:hover {
-  color: #f0893e;
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img {
+  border: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+ul, ol, li {
+  list-style: none
+}
+
+em, i {
+  font-style: normal
+}
+
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500;
 }
 
 img {
-  border: none;
+  border: 0;
+  max-width: 100%;
+}
+
+input, img {
   vertical-align: middle;
 }
 
-ul, ol, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, input, button {
-  margin: 0;
-  padding: 0;
-}
-
-em, i, strong {
-  font-weight: 400;
-  font-style: normal;
-}
-
-input, button, a, textarea {
+input:focus, a:focus {
   outline: none;
 }
 
-li {
-  list-style: none;
+a {
+  color: #333333;
+  text-decoration: none;
 }
 
-input[type='checkbox'] {
-  margin: 0;
-  padding: 0;
-  width: 14px;
-  height: 14px;
-  vertical-align: text-bottom;
+a:active {
+  opacity: .7;
 }
 
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: '';
+* {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
 }
 
-.clearfix:after {
-  clear: both;
-  zoom: 1;
+html {
+  -webkit-text-size-adjust: none;
+  overflow-y: scroll;
+  background: #f7f7f7;
 }
-
