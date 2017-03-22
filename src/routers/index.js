@@ -1,6 +1,2 @@
-// import {Home} from './pages/home'
-// import {List} from './pages/list'
- import {Main} from './pages/main'
-
-
-export {Main}
+import {Home, List, Discover, Vehicle, Me} from './pages'
+export {Home, List, Discover, Vehicle, Me}

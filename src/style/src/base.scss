@@ -46,7 +46,7 @@ body {font-size: 50px}
   body {font-size: 24px;}
 }
 
-//清楚浮动
+//清除浮动
 .clearfix:before,
 .clearfix:after {
   display: table;
@@ -56,4 +56,29 @@ body {font-size: 50px}
 .clearfix:after {
   clear: both;
   zoom: 1;
+}
+
+//1px border
+@mixin brdCom($pst, $bdrColor) {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  #{$pst}: 0;
+  border-top: 1px solid $bdrColor;
+  color: $bdrColor;
+  transform: scaleY(.5);
+}
+
+.bdr-btm,
+.bdr-btm {
+  position: relative;
+}
+
+.bdr-top::before {
+  @include brdCom(top, #ddd);
+}
+
+.bdr-btm::after {
+  @include brdCom(bottom, #ddd)
 }

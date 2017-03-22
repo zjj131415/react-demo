@@ -1,7 +1,33 @@
-.wrapper {
-  background: red;
-}
+#root {
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  @at-root .page-wrapper {
 
-.com-header {
-  background: #000;
+  }
+  @at-root .main-footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .main-nav {
+      height: 1.9rem;
+      display: flex;
+      background: #fff;
+    }
+    .link {
+      flex: 1;
+      text-align: center;
+      &.active {
+        color: red;
+      }
+      .icon {
+        font-size: .8rem;
+      }
+      > p {
+        font-size: .5rem;
+        color: #333;
+      }
+    }
+  }
 }
